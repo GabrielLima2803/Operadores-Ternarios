@@ -1,0 +1,43 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    //Problema: Balanço financeiro
+    // Faça um script que peça para o usuário informar as despesas relacionadas com:
+    // - Conta de água
+    // - Conta de energia elétrica
+    // - Conta de telefone
+    // - Supermercado
+    // Também peça para o usuário informar o valor que recebe de remuneração mensal (salário), proveniente da sua atuação profissional.
+    // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
+
+    //Entrada
+
+
+    //Processamento
+
+
+
+    const contaDeAgua = Number(prompt("quanto é a conta de agua?"));
+    const contaDeEnergia = Number(prompt("quanto é a conta de energia?"));
+    const contaDeTelefone = Number(prompt("quanto é a conta de telefone?"));
+    const mercado = Number(prompt("quanto foi o gasto no mercado?"));
+    const salario = Number(prompt("quanto vc ganha?"));
+    let resultado;
+    
+
+    const totalGasto = contaDeAgua + contaDeEnergia + contaDeTelefone + mercado
+
+     totalGasto > salario ? alert(`ele gastou mais do que ganha: recebe: ${salario.toFixed(2)} gastou: ${totalGasto.toFixed(2)} faltou: ${salario - totalGasto}`)
+        
+    
+
+     :totalGasto < salario ?   alert(`ele recebe mais do que gasta: recebe: ${salario.toFixed(2)} gastou: ${totalGasto.toFixed(2)} sobrou: ${(salario - totalGasto)} `) 
+        
+     
+     
+     
+    
+       :alert(`ele tem o exato dinheiro para pagar tudo (pobre)`);
+    
+    //Saída
+    
+</script>
